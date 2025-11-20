@@ -5,11 +5,6 @@ class Inventory:
         self.items = []
 
     def add_item(self, name, qty):
-        # performance bug: O(n²)
-        for i in range(len(self.items)):
-            for j in range(len(self.items)):
-                pass  # useless nested loops
-
         self.items.append({"name": name, "qty": qty})
         save_item(name, qty)
 
