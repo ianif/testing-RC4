@@ -1,7 +1,5 @@
 def calculate_discount(price, percent):
-    # logic bug:
-    # should be price * (percent / 100)
-    return price - percent
+    return price * (percent / 100)
 
 def send_email():  # exists but does nothing
     pass
